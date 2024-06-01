@@ -3,7 +3,7 @@
 
 Official code repository for the paper: M. Prabhushankar and G. AlRegib, "Counterfactual Gradients-based Quantification of Prediction Trust in Neural Networks", In 2024 IEEE 7th International Conference on Multimedia Information Processing and Retrieval (MIPR), San Jose, CA, Aug. 7-9, 2024 (Invited Paper).
 
-![Concept image showcasing uncertainty of GradCAM on VGG-16 and Swin Transformer Architectures](figs/Concept.png)
+![Concept image showcasing uncertainty of GradCAM on VGG-16 and Swin Transformer Architectures](Figs/Concept.png)
 GradCAM explanations and the proposed uncertainty visualization. Top row are results obtained on VGG-16 while bottom row are results obtained on Swin Transformer. Figs. (a), (b), (e), and (f) are obtained on a clean image where both VGG-16 and Swin Transformer predict correctly while Figs. (c), (d), (g), and (h) are results on noisy image where both networks predict incorrectly.
 
 ## Abstract
