@@ -10,7 +10,6 @@ import json
 from utils import visualize_cam, Normalize
 from utils_GradCAM import convert_to_grayscale
 from gradcam import GradCAM, GradCAMpp, Contrast, Contrast_pp, GuidedBackprop, generate_smooth_grad, guided_grad_cam, GuidedBackprop_Contrast
-from misc_functions import preprocess_image, recreate_image, get_params
 
 def iou_numpy(outputs: np.array, labels: np.array):
 
@@ -174,14 +173,14 @@ def main():
 
 
     #Choose Architecture
-    #arch = models.vgg16(pretrained=True)
-    #model_dict = dict(type='vgg', arch=arch, layer_name='features_29', input_size=(224, 224))
+    arch = models.vgg16(pretrained=True)
+    model_dict = dict(type='vgg', arch=arch, layer_name='features_29', input_size=(224, 224))
 
     #arch = models.squeezenet1_0(pretrained=True)
     #model_dict = dict(type='squeezenet', arch=arch, layer_name='features_12_expand3x3_activation', input_size=(224, 224))
 
-    arch = models.alexnet(pretrained=True)
-    model_dict = dict(type='alexnet', arch=arch, layer_name='features_11', input_size=(224, 224))
+    #arch = models.alexnet(pretrained=True)
+    #model_dict = dict(type='alexnet', arch=arch, layer_name='features_11', input_size=(224, 224))
 
     #arch = models.densenet169(pretrained=True)
     #model_dict = dict(type='densenet', arch=arch, layer_name='features_norm5', input_size=(224, 224))
