@@ -98,3 +98,6 @@ If you find this work useful, please cite the following two papers
 ## Questions?
 
 If you have any questions, regarding the dataset or the code, you can contact the authors [(mohit.p@gatech.edu)](mohit.p@gatech.edu), or even better open an issue in this repo and we'll do our best to help.
+
+## Code acknowledgements
+The code is built on Grad-CAM. We use the implementation of https://github.com/1Konny/gradcam_plus_plus-pytorch as our base code. Specifically, gradcam.py, utils_gradcam.py, and utils.py are adapted. 
